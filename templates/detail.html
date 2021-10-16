@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock title %}
+
+
+{% block content %}
+    <div class="card">
+        <h5 class="card-header">{{ post.author }}</h5>
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.body }}</p>
+            <a href="{% url 'home' %}" class="btn btn-primary">На Главную</a>
+        </div>
+    </div>
+{% endblock content %}
