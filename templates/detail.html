@@ -9,7 +9,8 @@
         <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
             <p class="card-text">{{ post.body }}</p>
-            <a href="{% url 'home' %}" class="btn btn-primary">На Главную</a>
+            <a href="{% url 'post_edit' post.pk %}" class="btn btn-primary">Редактировать</a>
+            <a href="{% url 'post_delete' post.pk %}" class="btn btn-danger">Удалить</a>
         </div>
     </div>
 {% endblock content %}
